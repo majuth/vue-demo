@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Demo 847</title>
+    </head>
+    <body>
+        <div id="app">
+            <p>{{course}}</p>
+            <img v-bind:src="image">
+            <p v-if="condition"> Yes it is true</p>
+            <p v-else="condition"> No it is false</p>
+            <button class="button" v-on:click="addNum +=1"> add</button>
+            <p>{{addNum}}</p>
+        </div>
+        <script src="https://unpkg.com/vue@3.0.11"></script>
+        <script src="./app.js" charset="utf-8"></script>
+        <script> const mountedApp = app.mount('#app')</script>
+    </body>
+</html>
